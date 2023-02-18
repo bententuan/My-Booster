@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 5094333118422241453}
   - component: {fileID: 4506880100796717571}
   - component: {fileID: 5862911339795216836}
+  - component: {fileID: 2761381588196134555}
   m_Layer: 0
   m_Name: BasePlayer
   m_TagString: Rocket
@@ -126,7 +127,7 @@ Transform:
   m_GameObject: {fileID: 1176656527134736758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -25, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4557357365490984667}
@@ -182,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdf4beb3d0cff494782ed73487de04cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustForce: 2
+  thrustForce: 1500
   rotationSpeed: 200
   mainEngineAudioSource: {fileID: 5247769707170580318}
   mainEngineAudioClip: {fileID: 8300000, guid: 04dd61ff389b4504fa16fedd5f314289, type: 3}
@@ -329,6 +330,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0562248, y: 1.424221, z: 1}
   m_Center: {x: 0.028112411, y: 0.7643051, z: 0}
+--- !u!114 &2761381588196134555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176656527134736758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abc608eb8ffb0a488b7bef826d3631f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2701587041261017884
 GameObject:
   m_ObjectHideFlags: 0

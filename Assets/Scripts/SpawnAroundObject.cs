@@ -8,15 +8,13 @@ public class SpawnAroundObject : MonoBehaviour
     [SerializeField] GameObject[] listSpawnObject;
     [SerializeField] float radius = 10;
     [SerializeField] float rotationSpeed = 10f;
-    private List<Vector3> spawnPosition = new List<Vector3>();
-    private bool isSpawnComplete = false;
+    private List<Vector3> spawnPosition = new List<Vector3>();    
     
     // Start is called before the first frame update
     void Start()
     {        
         CalculateSpawnPosition();
-        BeginSpawnObject();
-        isSpawnComplete = true;
+        BeginSpawnObject();        
         
     }
 

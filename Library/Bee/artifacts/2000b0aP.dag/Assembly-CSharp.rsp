@@ -287,6 +287,7 @@
 -r:"Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CollisionHandler.cs"
 "Assets/Scripts/CreditHandler.cs"
+"Assets/Scripts/LevelHandler.cs"
 "Assets/Scripts/MenuHandler.cs"
 "Assets/Scripts/MovementHandler.cs"
 "Assets/Scripts/Oscillator.cs"

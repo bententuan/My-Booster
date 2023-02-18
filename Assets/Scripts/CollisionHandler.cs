@@ -12,21 +12,10 @@ public class CollisionHandler : MonoBehaviour
     AudioSource audioSource;
 
     private bool isTransition = false;
-    private bool isCheating = false;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            Debug.Log(isCheating);
-            isCheating = !isCheating;
-            GetComponent<BoxCollider>().enabled = isCheating;
-        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -48,8 +37,9 @@ public class CollisionHandler : MonoBehaviour
 
     private void HandleCrashing()
     {
-        gameObject.GetComponent<MovementHandler>().enabled = false;
-        
+        gameObject.GetComponent<MovementHandler>().StopAllSound();
+        gameObject.GetComponent<MovementHandler>().StopAllParticle();
+        gameObject.GetComponent<MovementHandler>().enabled = false;                        
         PlayAudioClip(crashAudio);
         PlayParticle(crashParticle);
         Invoke("ReloeadScene", loadSceneDelay);
