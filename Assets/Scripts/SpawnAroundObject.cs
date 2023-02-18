@@ -17,12 +17,12 @@ public class SpawnAroundObject : MonoBehaviour
         CalculateSpawnPosition();
         BeginSpawnObject();
         isSpawnComplete = true;
+        
     }
 
     private void Update()
-    {        
-        Debug.Log(transform.position);
-        
+    {
+        transform.Rotate(0, 0, 1);
     }
 
     private void BeginSpawnObject()
@@ -41,7 +41,8 @@ public class SpawnAroundObject : MonoBehaviour
             float angle = i * Mathf.PI * 2 / listSpawnObject.Length;
             float xPosition = Mathf.Cos(angle) * radius;
             float yPosition = Mathf.Sin(angle) * radius;
-            spawnPosition.Add(new Vector3(xPosition, yPosition, 0));            
+            Vector3 objPosition = new Vector3(xPosition + transform.position.x, yPosition + transform.position.y, 0 + +transform.position.z);
+            spawnPosition.Add(objPosition);            
         }
     }
 }

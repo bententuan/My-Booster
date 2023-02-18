@@ -10,6 +10,7 @@
 -a="E:\uni\My Booster\Library\PlayerScriptAssemblies\Unity.Services.Core.Configuration.dll"
 -a="E:\uni\My Booster\Library\PlayerScriptAssemblies\Unity.Services.Core.dll"
 -a="E:\uni\My Booster\Library\PlayerScriptAssemblies\Unity.VisualScripting.Core.dll"
+-a="E:\uni\My Booster\Library\PlayerScriptAssemblies\Cinemachine.dll"
 -a="E:\uni\My Booster\Library\PlayerScriptAssemblies\Unity.Services.Core.Analytics.dll"
 -a="E:\uni\My Booster\Library\PlayerScriptAssemblies\Unity.Services.Core.Registration.dll"
 -a="E:\uni\My Booster\Library\PlayerScriptAssemblies\Unity.Services.Core.Environments.dll"
