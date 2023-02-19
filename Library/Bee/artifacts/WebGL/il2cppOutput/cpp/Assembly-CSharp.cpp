@@ -8476,16 +8476,33 @@ IL_0030:
 		L_3 = Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2(((int32_t)27), NULL);
 		if (!L_3)
 		{
-			goto IL_003f;
+			goto IL_0040;
 		}
 	}
 	{
 		// SceneManager.LoadScene(0);
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(0, NULL);
+		return;
 	}
 
-IL_003f:
+IL_0040:
+	{
+		// } else if(Input.GetKeyDown(KeyCode.E))
+		bool L_4;
+		L_4 = Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2(((int32_t)101), NULL);
+		if (!L_4)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		// SceneManager.LoadScene(4);
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(4, NULL);
+	}
+
+IL_004f:
 	{
 		// }
 		return;

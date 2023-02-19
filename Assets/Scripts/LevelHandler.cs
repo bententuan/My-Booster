@@ -19,6 +19,9 @@ public class LevelHandler : MonoBehaviour
         } else if(Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
+        } else if(Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene(4);
         }
     }
 }

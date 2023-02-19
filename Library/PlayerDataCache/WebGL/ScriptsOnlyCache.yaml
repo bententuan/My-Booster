@@ -28,10 +28,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -137,6 +135,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6332}
     - Class: 114
       Script: {instanceID: 6684}
+    - Class: 114
+      Script: {instanceID: 8698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -206,6 +206,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6332}
     - Class: 114
       Script: {instanceID: 6684}
+    - Class: 114
+      Script: {instanceID: 8698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -264,7 +266,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7150}
     - Class: 114
-      Script: {instanceID: 25644}
+      Script: {instanceID: 8698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -329,7 +331,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7830}
     - Class: 114
-      Script: {instanceID: 25644}
+      Script: {instanceID: 8698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -398,7 +400,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8692}
     - Class: 114
-      Script: {instanceID: 25644}
+      Script: {instanceID: 8698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1727,15 +1729,15 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnSliderValueChangedMessageListener
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
@@ -1743,4 +1745,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Map2.unity
   - Assets/Scenes/Map3.unity
   - Assets/Scenes/Ending.unity
-  playerPath: E:/uni/Builds/build12
+  playerPath: E:/uni/Builds/build14

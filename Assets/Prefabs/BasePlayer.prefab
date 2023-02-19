@@ -105,12 +105,12 @@ GameObject:
   - component: {fileID: 1176656527134736747}
   - component: {fileID: 1176656527134736746}
   - component: {fileID: 1176656527134736759}
+  - component: {fileID: 5094333118422241453}
+  - component: {fileID: 5862911339795216836}
+  - component: {fileID: 4506880100796717571}
+  - component: {fileID: 2761381588196134555}
   - component: {fileID: 1176656527134736744}
   - component: {fileID: 1176656527134736745}
-  - component: {fileID: 5094333118422241453}
-  - component: {fileID: 4506880100796717571}
-  - component: {fileID: 5862911339795216836}
-  - component: {fileID: 2761381588196134555}
   m_Layer: 0
   m_Name: BasePlayer
   m_TagString: Rocket
@@ -171,44 +171,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
---- !u!114 &1176656527134736744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176656527134736758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf4beb3d0cff494782ed73487de04cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrustForce: 1500
-  rotationSpeed: 200
-  mainEngineAudioSource: {fileID: 5247769707170580318}
-  mainEngineAudioClip: {fileID: 8300000, guid: 04dd61ff389b4504fa16fedd5f314289, type: 3}
-  rotateEngineAudioSource: {fileID: 4383138717248472141}
-  rotateEngineAudioClip: {fileID: 8300000, guid: 6368f9673dd4f3e4ca89e488c5bdde55, type: 3}
-  leftSidePE: {fileID: 1270500261977477540}
-  rightSidePE: {fileID: 1634334806393731744}
-  centerPE: {fileID: 2278847841188010859}
---- !u!114 &1176656527134736745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176656527134736758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f9a16e3bf0ed548ab2087aca3a76c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadSceneDelay: 2
-  successAudio: {fileID: 8300000, guid: 144ff0c3b7c618046bf7ac519f87e2e5, type: 3}
-  crashAudio: {fileID: 8300000, guid: 3fe0bed9262dc594f88573cfa64c88ac, type: 3}
-  successParticle: {fileID: 8373013866318102135}
-  crashParticle: {fileID: 8077175531632143247}
 --- !u!82 &5094333118422241453
 AudioSource:
   m_ObjectHideFlags: 0
@@ -305,18 +267,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4506880100796717571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176656527134736758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a589fdc4fad9ad4f9747c59c17dbf36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &5862911339795216836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -330,6 +280,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0562248, y: 1.424221, z: 1}
   m_Center: {x: 0.028112411, y: 0.7643051, z: 0}
+--- !u!114 &4506880100796717571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176656527134736758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a589fdc4fad9ad4f9747c59c17dbf36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2761381588196134555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +304,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abc608eb8ffb0a488b7bef826d3631f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1176656527134736744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176656527134736758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf4beb3d0cff494782ed73487de04cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrustForce: 1500
+  rotationSpeed: 200
+  mainEngineAudioSource: {fileID: 5247769707170580318}
+  mainEngineAudioClip: {fileID: 8300000, guid: 04dd61ff389b4504fa16fedd5f314289, type: 3}
+  rotateEngineAudioSource: {fileID: 4383138717248472141}
+  rotateEngineAudioClip: {fileID: 8300000, guid: 6368f9673dd4f3e4ca89e488c5bdde55, type: 3}
+  leftSidePE: {fileID: 1270500261977477540}
+  rightSidePE: {fileID: 1634334806393731744}
+  centerPE: {fileID: 2278847841188010859}
+--- !u!114 &1176656527134736745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176656527134736758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f9a16e3bf0ed548ab2087aca3a76c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadSceneDelay: 2
+  successAudio: {fileID: 8300000, guid: 144ff0c3b7c618046bf7ac519f87e2e5, type: 3}
+  crashAudio: {fileID: 8300000, guid: 3fe0bed9262dc594f88573cfa64c88ac, type: 3}
+  successParticle: {fileID: 8373013866318102135}
+  crashParticle: {fileID: 8077175531632143247}
 --- !u!1 &2701587041261017884
 GameObject:
   m_ObjectHideFlags: 0
